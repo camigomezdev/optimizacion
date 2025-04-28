@@ -1,0 +1,10 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+  <h1>Órdenes</h1>
+  <ul>
+    {% for order in orders %}
+      <li>Orden #{{ order.id }} de {{ order.customer.name }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

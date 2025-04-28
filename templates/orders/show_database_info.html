@@ -1,0 +1,12 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+  <h1>Conteo de modelos</h1>
+
+  <ul>
+    <li>Clientes: {{ customer_count }}</li>
+    <li>Productos: {{ product_count }}</li>
+    <li>Órdenes: {{ order_count }}</li>
+    <li>Ítems de orden: {{ order_item_count }}</li>
+  </ul>
+{% endblock %}

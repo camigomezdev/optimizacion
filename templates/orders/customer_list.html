@@ -1,0 +1,10 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+  <h1>Clientes</h1>
+  <ul>
+    {% for customer in customers %}
+      <li>{{ customer.name }} - Total órdenes: {{ customer.orders.count }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+  <h1>Órdenes y Productos</h1>
+  <ul>
+    {% for order in orders %}
+      <li>
+        Orden #{{ order.id }}:<ul>
+          {% for item in order.items.all %}
+            <li>{{ item.product.name }} (x{{ item.quantity }})</li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
