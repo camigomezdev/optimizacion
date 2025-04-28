@@ -14,7 +14,7 @@
 
 1. **Clona el repositorio**
 ```bash
-git clone https://github.com/tu_usuario/optimizacion.git
+git clone https://github.com/camigomezdev/optimizacion.git
 cd optimizacion
 ```
 
