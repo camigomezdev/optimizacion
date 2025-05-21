@@ -2,9 +2,15 @@
 
 {% block content %}
 <h1>Productos</h1>
+<h1>Avrg price: ${{ avg_price|floatformat:2 }}</h1>
 <ul>
     {% for product in products %}
-        <li>{{ product.name }} - ${{ product.price }}</li>
+    <li>
+        {{ product.name }}
+        <ul>
+          <li>Price: {{ product.price }}</li>
+        </ul>
+      </li>
     {% endfor %}
 </ul>
 {% endblock %}
